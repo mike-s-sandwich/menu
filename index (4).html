@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mike's Sandwich Shop · Menu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Yellowtail&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--g:#1f6b3a;--o:#e0701a;--cr:#f7f3ea;--k:#262626}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:74px}
+body{font-family:'Nunito','Trebuchet MS',sans-serif;color:var(--k);background-color:var(--cr);background-image:conic-gradient(rgba(31,107,58,.06) 25%,transparent 0 50%,rgba(31,107,58,.06) 0 75%,transparent 0);background-size:40px 40px}
+.stripe{height:14px;background:repeating-linear-gradient(90deg,var(--g) 0 40px,var(--o) 40px 80px)}
+header{background:var(--g);color:#fff;text-align:center;padding:30px 14px 34px;border-bottom:6px solid var(--o)}
+.badge{display:inline-block;background:var(--cr);color:var(--g);border:6px double var(--o);border-radius:50%/42%;padding:18px 44px 22px;box-shadow:8px 8px 0 rgba(0,0,0,.3);max-width:100%}
+.mk{font-family:'Rye',Georgia,serif;font-size:clamp(3rem,13vw,5.4rem);line-height:1;color:var(--g);text-shadow:3px 3px 0 var(--o)}
+.sw{font-family:'Yellowtail',cursive;font-size:clamp(1.8rem,8vw,3rem);color:var(--o);line-height:1;margin-top:-2px}
+.sub{margin-top:16px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.9rem}
+.info{background:var(--o);color:#fff;text-align:center;padding:14px;font-weight:800}
+.info a{color:#fff;font-size:1.6rem;text-decoration:none}
+.info p{margin:3px 0}
+nav{position:sticky;top:0;z-index:9;display:flex;gap:8px;overflow-x:auto;padding:10px 12px;background:var(--k);border-bottom:4px solid var(--o);scrollbar-width:none}
+nav a{flex:0 0 auto;text-decoration:none;font-weight:800;padding:7px 15px;border-radius:30px;background:var(--o);color:#fff;white-space:nowrap}
+nav a:nth-child(even){background:var(--g)}
+nav a:hover,nav a:focus-visible{outline:3px solid #fff}
+.lang{position:sticky;left:0;z-index:2;display:flex;gap:4px;flex:0 0 auto;background:var(--k);padding-right:8px}
+.lang button{border:2px solid #fff;background:transparent;color:#fff;font:inherit;font-weight:800;padding:5px 12px;border-radius:30px;cursor:pointer}
+.lang button[aria-pressed=true]{background:#fff;color:var(--k)}
+main{max-width:1100px;margin:0 auto;padding:6px 14px 40px}
+section{margin-top:36px}
+h2{font-family:'Rye',Georgia,serif;font-weight:400;font-size:clamp(1.6rem,6vw,2.4rem);text-align:center;color:var(--g);text-shadow:2px 2px 0 #f6c28f}
+h2::after{content:"";display:block;height:6px;width:150px;margin:10px auto 18px;border-radius:4px;background:repeating-linear-gradient(90deg,var(--g) 0 25px,var(--o) 25px 50px)}
+.cols{columns:2 340px;column-gap:22px}
+.cd{break-inside:avoid;background:#fff;border:3px solid var(--c);border-radius:16px;margin:0 0 20px;box-shadow:6px 6px 0 var(--c);overflow:hidden}
+.cd:nth-child(odd){--c:var(--g)}.cd:nth-child(even){--c:var(--o)}
+.cd h3{background:var(--c);color:#fff;font-weight:800;font-size:1.15rem;padding:10px 16px;text-transform:uppercase;letter-spacing:.04em;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.cd h3 em{font-style:normal;background:#fff;color:var(--c);font-size:.85rem;padding:2px 10px;border-radius:20px;white-space:nowrap}
+.nt{padding:9px 16px 2px;font-size:.88rem;font-style:italic;color:#555}
+.it{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:9px 16px;border-bottom:1px dashed #d9d2c0}
+.it:last-child{border-bottom:0}
+.nm{font-weight:800}.ds{font-size:.85rem;color:#555;margin-top:1px}
+.pr{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}
+.ch{display:flex;flex-direction:column;align-items:center;min-width:50px;background:#fdebd5;border-radius:10px;padding:2px 8px;white-space:nowrap}
+.ch i{font-style:normal;font-size:.66rem;font-weight:800;color:var(--g);text-transform:uppercase}
+.ch b{color:#b3500b;font-size:.95rem}
+footer{background:var(--g);color:#fff;text-align:center;padding:26px 16px 30px;border-top:6px solid var(--o)}
+footer h2{color:#fff;text-shadow:2px 2px 0 var(--o)}footer h2::after{display:none}
+footer a{color:#ffd9b0;font-weight:800;font-size:1.4rem;text-decoration:none}
+footer p{margin:4px 0}
+.fine{font-size:.85rem;max-width:620px;margin:12px auto 0!important}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="stripe"></div>
+<header>
+  <div class="badge"><div class="mk">Mike’s</div><div class="sw">sandwich shop</div></div>
+  <p class="sub" data-es="Reading, PA · Hogar de la leyenda de Pennsylvania">Reading, PA · Home of the Pennsylvania Legend</p>
+</header>
+<div class="info">
+  <p><a href="tel:6103742626">610-374-2626</a></p>
+  <p data-es="Lun 10am–6pm · Mar–Sáb 10am–8pm · Cerrado domingo">Mon 10am–6pm · Tue–Sat 10am–8pm · Closed Sunday</p>
+</div>
+<nav id="nav"></nav>
+<main id="menu"></main>
+<footer>
+  <h2 data-es="¡Gracias por visitarnos!">Thanks for stopping by!</h2>
+  <p><a href="tel:6103742626">610-374-2626</a></p>
+  <p class="fine" data-es="$2.00 de cada Red Knight vendido se dona mensualmente a un programa del Distrito Escolar de Reading.">$2.00 of each Red Knight sold is donated to a Reading School District program monthly.</p>
+</footer>
+<div class="stripe"></div>
+
+<script>
+const z=(a,b)=>[a,b];
+const S=(a,b)=>`Sm ${a}|Lg ${b}`;
+const D=[
+{id:"steaks",ic:"🥩",t:z("Legendary Cheese Steaks","Cheese Steaks Legendarios"),g:[
+ {n:z("The Legendary Cheese Steaks","Los Cheese Steaks Legendarios"),note:z("Sm // Lg. Add California Style at the same price: creamy mayonnaise, juicy tomato & shredded lettuce.","Peq. // Gde. Estilo California al mismo precio: mayonesa cremosa, tomate jugoso y lechuga rallada."),i:[
+  ["The Legend",S("9.95","11.95"),z("Our over-50-year-old original recipe (Berks County style). The large is over 1 lb of hand-selected meat, cooked to perfection and melted in American cheese. Optional sautéed onions and your choice of peppers, topped with our famous sauce, served with dill pickle chips.","Nuestra receta original de más de 50 años (estilo Berks County). El grande lleva más de 1 libra de carne seleccionada a mano, derretida en queso americano. Cebolla salteada opcional y pimientos a tu elección, con nuestra salsa famosa y pepinillos.")],
+  ["The Thing",S("9.95","11.95"),z("Our Legendary Cheese Steak baked in the oven with American and provolone cheese, topped with our famous sauce. Add sautéed onions and your choice of peppers.","Nuestro Cheese Steak Legendario horneado con queso americano y provolone, con nuestra salsa famosa. Agrega cebolla salteada y pimientos a tu elección.")],
+  ["The Red Knight",S("11.95","13.95"),z("Our Legendary Cheese Steak mixed up in our famous sauce, then topped with a ridiculous amount of American cheese. Add sautéed onions and peppers if you wish.","Nuestro Cheese Steak Legendario mezclado con nuestra salsa famosa y una cantidad ridícula de queso americano. Agrega cebolla salteada y pimientos si quieres.")],
+  ["The Godfather (Philly Style)","14.95",z("Black Angus ribeye from Creekstone Farms, hand cut and fresh chipped, with sautéed onions and a silly amount of Cooper Sharp cheese, in a 10″ Conshohocken Bakery roll.","Ribeye Black Angus de Creekstone Farms, cortado a mano, con cebolla salteada y una cantidad enorme de queso Cooper Sharp, en pan de 10″ de Conshohocken Bakery.")],
+  ["The Burg (Pittsburg Style)","14.95",z("Thinly sliced Black Angus ribeye with sautéed green pepper and onions and tons of creamy provolone, folded into a garlic butter toasted Conshohocken Bakery roll.","Ribeye Black Angus en rebanadas finas con pimiento verde y cebolla salteados y mucho provolone cremoso, en pan tostado con mantequilla de ajo de Conshohocken Bakery.")]]},
+ {n:z("Steak Extras","Extras para Steaks"),i:[
+  [z("Cheese: American, provolone or real Kraft Whiz","Queso: americano, provolone o Kraft Whiz"),"N/C"],
+  [z("Cooper Sharp, white cheddar or pepper jack","Cooper Sharp, cheddar blanco o pepper jack"),"+0.75"],
+  [z("Extra cheese","Queso extra"),"+1.00"],[z("Bacon","Tocino"),"+1.00"],
+  [z("Extra meat","Carne extra"),"+1.00",z("Sorry, won’t fit in the roll — we pack them full!","Perdón, no cabe en el pan, ¡los llenamos al máximo!")],
+  [z("Pepperoni","Pepperoni"),"+0.75"],[z("Chicken finger","Dedo de pollo"),"+1.50"],[z("Hot oil peppers","Chiles en aceite picante"),"+1.00"],[z("Sweet peppers","Pimientos dulces"),"+0.75"],[z("Mushrooms","Champiñones"),"+0.75"],[z("Dressing","Aderezo"),"+0.75"],
+  [z("Extra sauce · fried or raw onions · banana or crushed peppers","Salsa extra · cebolla frita o cruda · chiles banana o triturados"),"N/C"]]}]},
+{id:"chicken",ic:"🍗",t:z("Chicken Cheese Steaks","Cheese Steaks de Pollo"),g:[
+ {n:z("Chicken Cheese Steaks & Variations","Cheese Steaks de Pollo y Variaciones"),note:z("Sm // Lg. California Style at the same price.","Peq. // Gde. Estilo California al mismo precio."),i:[
+  ["Chicken Steak / Cheese Steak",S("9.45","10.95"),z("USDA-choice chicken seasoned and grilled, melted in smooth American cheese. Optional sautéed onions and peppers, topped with our famous sauce, with dill pickle chips.","Pollo USDA sazonado a la parrilla con queso americano derretido. Cebolla salteada y pimientos opcionales, con nuestra salsa famosa y pepinillos.")],
+  ["Buffalo Chicken Cheese Steak",S("9.95","11.45"),z("A Chicken Cheese Steak tossed in hot sauce, topped with creamy Kraft ranch or blue cheese dressing.","Cheese Steak de pollo con salsa picante, con aderezo ranch Kraft cremoso o queso azul.")],
+  ["Chicken Bacon Ranch Cheese Steak",S("10.95","12.45"),z("A Chicken Cheese Steak with locally sourced double smoked bacon and creamy Kraft ranch.","Cheese Steak de pollo con tocino doble ahumado local y ranch Kraft cremoso.")]]}]},
+{id:"subs",ic:"🥖",t:z("Sandwiches","Sándwiches"),g:[
+ {n:z("Cold","Fríos"),p:z("Sm 8.95 · Lg 9.95","Peq. 8.95 · Gde. 9.95"),note:z("On a fresh roll with mayo, oil or oil & vinegar, your choice of peppers, local lettuce, tomato & onion. American or provolone N/C; Cooper Sharp, white cheddar or pepper jack + $0.75.","En pan fresco con mayonesa, aceite o aceite y vinagre, pimientos, lechuga local, tomate y cebolla. Americano o provolone sin cargo; Cooper Sharp, cheddar blanco o pepper jack + $0.75."),i:[
+  ["Italian Sandwich","",z("Cooked salami, hard salami, capicola & provolone","Salami cocido, salami duro, capicola y provolone")],
+  ["Cheese Italian Sandwich","",z("American & provolone cheese (cheese only, no meat)","Queso americano y provolone (solo queso, sin carne)")],
+  ["Ham & Cheese Sandwich","",z("Premium ham & provolone","Jamón premium y provolone")],
+  ["Turkey & Cheese Sandwich","",z("Premium turkey & provolone","Pavo premium y provolone")],
+  [z("Tuna Sandwich","Sándwich de Atún"),"",z("Superior quality tuna with creamy mayo","Atún de calidad superior con mayonesa cremosa")],
+  ["Roast Beef Sandwich","",z("Perfectly seasoned, thinly sliced roast beef","Roast beef sazonado en rebanadas finas")],
+  [z("Roasted Chicken Breast Sandwich","Sándwich de Pechuga de Pollo Asada"),"",z("Roasted chicken breast & provolone","Pechuga de pollo asada y provolone")],
+  [z("Chicken Salad Sandwich","Sándwich de Ensalada de Pollo"),"",z("Roasted, pulled chicken breast with creamy mayo","Pechuga de pollo asada y desmenuzada con mayonesa cremosa")],
+  [z("Egg Salad Sandwich","Sándwich de Ensalada de Huevo"),"",z("Boiled eggs with seasoning and creamy mayo","Huevo cocido con sazón y mayonesa cremosa")]]},
+ {n:z("Grilled","A la Plancha"),p:z("Sm 8.95 · Lg 9.95","Peq. 8.95 · Gde. 9.95"),i:[
+  [z("Grilled Ham & Cheese","Jamón y Queso a la Plancha"),"",z("Grilled premium ham & melted provolone","Jamón premium a la plancha y provolone derretido")],
+  [z("Grilled Italian Sandwich","Sándwich Italiano a la Plancha"),"",z("Grilled salami, hard salami, capicola & melted provolone — yes, it’s awesome!","Salami, salami duro y capicola a la plancha con provolone derretido, ¡y sí, está increíble!")]]},
+ {n:z("Hot","Calientes"),p:z("Sm 8.95 · Lg 9.95","Peq. 8.95 · Gde. 9.95"),note:z("Served with mayo on a roll. Your choice of peppers, lettuce, tomato & onion.","Con mayonesa en pan. Pimientos, lechuga, tomate y cebolla a tu elección."),i:[
+  [z("Chicken Finger Sandwich","Sándwich de Dedos de Pollo"),"",z("Premium Tyson chicken fingers with your choice of veggies","Dedos de pollo Tyson premium con los vegetales que elijas")],
+  ["BLT Hoagie","",z("Locally sourced double smoked bacon, lettuce & tomato","Tocino doble ahumado local, lechuga y tomate")]]},
+ {n:z("Baked","Horneados"),p:z("Sm 8.95 · Lg 9.95","Peq. 8.95 · Gde. 9.95"),i:[
+  ["The Torpedo","",z("Cooked salami, hard salami & capicola with our famous sauce and provolone, baked. Optional onions and peppers.","Salami cocido, salami duro y capicola con nuestra salsa famosa y provolone, horneado. Cebolla y pimientos opcionales.")],
+  ["The Gizmo","",z("Premium ham, lettuce, tomato, optional onions and peppers, topped with provolone and baked until melted.","Jamón premium, lechuga, tomate, cebolla y pimientos opcionales, con provolone horneado hasta derretirse.")],
+  [z("Meatball","Albóndigas"),"",z("Italian-style meatballs in our house-made sauce, creamy provolone and shredded mozzarella, baked golden.","Albóndigas estilo italiano en nuestra salsa casera, con provolone cremoso y mozzarella rallada, horneadas.")]]},
+ {n:z("On a Bun","En Pan Redondo"),p:"$6.45",note:z("Add cheese: American or provolone N/C; white cheddar or pepper jack + $0.75.","Agrega queso: americano o provolone sin cargo; cheddar blanco o pepper jack + $0.75."),i:[
+  [z("Premium Breaded Chicken Breast","Pechuga de Pollo Empanizada"),"6.45",z("Tyson breaded chicken breast with lettuce, tomato, onion & mayo on a fresh bun","Pechuga Tyson empanizada con lechuga, tomate, cebolla y mayonesa en pan fresco")],
+  [z("Crispy Haddock Fish Sandwich","Sándwich de Eglefino Crujiente"),"6.45",z("Premium haddock with lettuce, tomato, onion & mayo or tartar sauce on a fresh bun","Eglefino premium con lechuga, tomate, cebolla y mayonesa o salsa tártara en pan fresco")]]}]},
+{id:"burgers",ic:"🍔",t:z("Burgers","Hamburguesas"),g:[
+ {n:z("Smash Burgers","Smash Burgers"),note:z("5 oz locally sourced Black Angus ground beef on a fresh bun (toasted, untoasted or garlic bread toasted). Cheese: American, provolone, white cheddar, Cooper Sharp or pepper jack.","5 oz de res Black Angus local en pan fresco (tostado, sin tostar o pan de ajo tostado). Queso: americano, provolone, cheddar blanco, Cooper Sharp o pepper jack."),i:[
+  ["The Smash","6.95"],
+  ["California Style",z("+1.00","+1.00"),z("Creamy mayonnaise, juicy tomato, shredded lettuce & fresh sliced onion","Mayonesa cremosa, tomate, lechuga rallada y cebolla fresca")],
+  ["Mike’s Special","6.95",z("Sautéed onions, our famous sauce & melted American cheese on a toasted bun","Cebolla salteada, nuestra salsa famosa y queso americano derretido en pan tostado")],
+  ["The Cowboy Smash","8.45",z("Crispy onion rings topped with Sweet Baby Ray’s BBQ sauce and melted creamy cheddar on garlic bread toasted roll","Aros de cebolla crujientes con salsa BBQ Sweet Baby Ray’s y cheddar cremoso derretido en pan de ajo tostado")]]},
+ {n:z("Smash Burger Subs","Subs de Smash Burger"),p:z("Sm 9.95 · Lg 11.95","Peq. 9.95 · Gde. 11.95"),note:z("With mayo, your choice of peppers, lettuce, tomato & onion. American or provolone N/C; Cooper Sharp, white cheddar or pepper jack + $0.75.","Con mayonesa, pimientos, lechuga, tomate y cebolla. Americano o provolone sin cargo; Cooper Sharp, cheddar blanco o pepper jack + $0.75."),i:[
+  ["Cheese Twin Burger Smash","",z("5 oz or 10 oz Black Angus patties with mayo, tomato, lettuce & onion, American cheese on a fresh roll","Hamburguesas Black Angus de 5 oz o 10 oz con mayonesa, tomate, lechuga y cebolla, queso americano en pan fresco")],
+  ["The Cosmo Smash","",z("Black Angus patties wrapped in grilled ham with melted provolone & American cheese","Hamburguesas Black Angus envueltas en jamón a la plancha con provolone y queso americano derretidos")]]},
+ {n:z("Burgers","Hamburguesas"),note:z("1/3 lb fresh locally sourced Black Angus beef. Cheese: American, provolone, white cheddar or pepper jack.","1/3 lb de res Black Angus fresca local. Queso: americano, provolone, cheddar blanco o pepper jack."),i:[
+  [z("Hamburger","Hamburguesa"),"5.95"],["Cheeseburger","6.95"],[z("Make it a double","Hazla doble"),"",z("Ask for the extra charge","Pregunta el cargo extra")],
+  ["California Style","+1.00",z("Creamy mayonnaise, juicy tomato, shredded lettuce & fresh sliced onion","Mayonesa cremosa, tomate, lechuga rallada y cebolla fresca")],
+  ["Mike’s Special","5.75",z("Single patty with sautéed onions, our famous sauce & melted American cheese on a toasted bun","Una carne con cebolla salteada, nuestra salsa famosa y queso americano en pan tostado")]]},
+ {n:z("Burger Subs","Subs de Hamburguesa"),p:z("Sm 8.95 · Lg 10.95","Peq. 8.95 · Gde. 10.95"),note:z("With mayo, your choice of peppers, lettuce, tomato & onion.","Con mayonesa, pimientos, lechuga, tomate y cebolla."),i:[
+  ["Cheese Twin Burger","",z("One or two fresh Angus beef burgers with mayo, tomato, lettuce, onion & melted American cheese on a fresh roll","Una o dos hamburguesas Angus con mayonesa, tomate, lechuga, cebolla y queso americano en pan fresco")],
+  ["The Cosmo","",z("One or two Angus burgers wrapped in grilled ham with melted provolone & American cheese","Una o dos hamburguesas Angus envueltas en jamón a la plancha con provolone y queso americano")]]},
+ {n:z("Burger Extras","Extras para Hamburguesas"),i:[
+  [z("Extra cheese","Queso extra"),"+1.00"],[z("Double smoked bacon","Tocino doble ahumado"),"+1.00"],["Pepperoni","+0.75"],[z("Mushrooms","Champiñones"),"+0.75"],[z("Dressing","Aderezo"),"+0.75"],[z("Hot Italian oil peppers","Chiles italianos en aceite picante"),"+1.00"],[z("Sweet peppers","Pimientos dulces"),"+0.75"],[z("Onions · banana or crushed peppers","Cebolla · chiles banana o triturados"),"N/C"]]}]},
+{id:"fryer",ic:"🍟",t:z("From the Fryer","De la Freidora"),g:[
+ {n:z("Fries & Rings","Papas y Aros"),i:[
+  [z("French Fries","Papas Fritas"),S("3.45","4.95"),z("Add real Kraft Whiz + $1.00","Con Kraft Whiz + $1.00")],
+  [z("Sweet Potato Fries","Papas de Camote"),S("3.45","4.95")],
+  [z("Onion Rings","Aros de Cebolla"),"4.95",z("Perfectly breaded and fried golden","Empanizados y fritos hasta dorar")],
+  [z("Tater Tots (15)","Tater Tots (15)"),"4.95",z("Cheese Whiz + $1.00 · double smoked bacon + $1.00","Cheese Whiz + $1.00 · tocino doble ahumado + $1.00")],
+  [z("Fried Shrimp & French Fries","Camarones Fritos y Papas"),"8.95",z("Battered fried shrimp & small French fry","Camarones empanizados y papas chicas")]]},
+ {n:z("Bites","Botanas"),i:[
+  [z("Premium Chicken Nuggets","Nuggets de Pollo Premium"),"6 pc 3.95|9 pc 4.95",z("Tyson chicken nuggets","Nuggets de pollo Tyson")],
+  [z("Premium Chicken Fingers (3)","Dedos de Pollo Premium (3)"),"5.95"],
+  [z("Buffalo Chicken Fingers (3)","Dedos de Pollo Buffalo (3)"),"6.45",z("Tossed in hot sauce with creamy Kraft ranch or blue cheese","Con salsa picante y ranch Kraft cremoso o queso azul")],
+  [z("Corn Nuggets (15)","Nuggets de Elote (15)"),"5.25"],[z("Mozzarella Stix (4)","Palitos de Mozzarella (4)"),"5.25"],
+  [z("Jalapeño Poppers (5)","Jalapeños Rellenos (5)"),"5.25",z("Cored and stuffed with sharp cheddar, battered & fried","Rellenos de cheddar, empanizados y fritos")],
+  [z("Broccoli & Cheddar Bites (5)","Bocados de Brócoli y Cheddar (5)"),"5.25"],
+  [z("Fried Pickle Chips","Pepinillos Fritos"),"5.25",z("Dill pickle chips, battered, seasoned & fried","Rodajas de pepinillo empanizadas y fritas")],
+  [z("Breaded Mac & Cheese (5)","Mac & Cheese Empanizado (5)"),"4.95"],[z("Toasted Raviolis (8)","Raviolis Tostados (8)"),"5.25",z("Stuffed with creamy ricotta, fried golden","Rellenos de ricotta cremosa, fritos")],
+  [z("Breaded Mushroom (15)","Champiñones Empanizados (15)"),"6.45"],[z("Cheddar Cheese Cubes (12)","Cubos de Cheddar (12)"),"5.25"],
+  [z("Pierogies (4)","Pierogies (4)"),"3.95",z("Mrs. T’s famous pierogies, fried golden brown","Los famosos pierogies de Mrs. T’s, fritos y dorados")]]}]},
+{id:"quesadillas",ic:"🧀",t:z("Quesadillas","Quesadillas"),g:[
+ {n:z("Quesadillas","Quesadillas"),i:[
+  [z("Cheese Quesadilla","Quesadilla de Queso"),"6.95",z("Layers of creamy pepper jack cheese, melted perfectly","Capas de queso pepper jack cremoso, derretido a la perfección")],
+  [z("Breakfast Quesadilla","Quesadilla de Desayuno"),"6.95",z("Seasoned eggs & American cheese · add ham or double smoked bacon + $1.00","Huevos sazonados y queso americano · agrega jamón o tocino + $1.00")],
+  [z("Pizza Quesadilla","Quesadilla de Pizza"),"6.95",z("House-made sauce & creamy mozzarella · add pepperoni, ham or bacon + $1.00","Salsa casera y mozzarella cremosa · agrega pepperoni, jamón o tocino + $1.00")],
+  ["The Legend (Cheese Steak) Quesadilla","7.95",z("Seasoned steak with creamy melted American cheese, optional grilled onions & peppers, our famous sauce on the side","Steak sazonado con queso americano derretido, cebolla y pimientos opcionales, con nuestra salsa famosa aparte")],
+  [z("Chicken Cheese Steak Quesadilla","Quesadilla de Cheese Steak de Pollo"),"7.95",z("Buffalo or BBQ style + $0.50 · bacon & ranch style + $1.00","Estilo Buffalo o BBQ + $0.50 · estilo tocino y ranch + $1.00")],
+  ["The OG Smash Quesadilla","7.95",z("Black Angus ground beef with American cheese · add bacon or Cowboy style (onion rings & BBQ sauce) + $1.00","Res Black Angus con queso americano · agrega tocino o estilo Cowboy (aros de cebolla y salsa BBQ) + $1.00")],
+  [z("Chicken Quesadilla","Quesadilla de Pollo"),"7.95",z("Premium chicken fingers with creamy melted American cheese · or Cajun style, a dash of our famous sauce & creamy provolone","Dedos de pollo premium con queso americano cremoso · o estilo con un toque de nuestra salsa famosa y provolone")]]}]},
+{id:"more",ic:"🥗",t:z("Salads, Kids & Pizza","Ensaladas, Niños y Pizza"),g:[
+ {n:z("Salads","Ensaladas"),note:z("Make any cold sandwich or cheese steak a salad: juicy tomato, crisp shredded lettuce, fresh sliced onion, cucumbers, your choice of peppers & dressing, with optional mozzarella and croutons.","Convierte cualquier sándwich frío o cheese steak en ensalada: tomate, lechuga, cebolla, pepino, pimientos y aderezo, con mozzarella y crutones opcionales."),i:[
+  [z("Garden Salad","Ensalada Garden"),"7.95"],[z("Chef Salad","Ensalada del Chef"),"9.95"],[z("Chicken Finger Salad","Ensalada de Dedos de Pollo"),"9.95"],[z("Cold Sandwich Salad","Ensalada de Sándwich Frío"),"9.95"],[z("Cheese Steak / Chicken Cheese Steak Salad","Ensalada de Cheese Steak / de Pollo"),"10.95"]]},
+ {n:z("Kid’s Menu","Menú de Niños"),p:"$4.95",i:[
+  [z("Nuggets & Fries","Nuggets y Papas"),"",z("4 premium Tyson chicken nuggets & kid’s size fries","4 nuggets Tyson premium y papas tamaño niño")],
+  [z("Hot Dog & Fries","Hot Dog y Papas"),"",z("Berks Grill dog with kid’s size fries · add cheese + $0.75","Hot dog Berks Grill con papas tamaño niño · agrega queso + $0.75")],
+  [z("Smash Burger & Fries","Smash Burger y Papas"),"",z("Single fresh Black Angus patty & kid’s size fries · add cheese + $0.75","Una carne Black Angus fresca y papas tamaño niño · agrega queso + $0.75")]]},
+ {n:"Pizza",p:"$7.95",i:[
+  [z("9″ Carnival Style Pizza","Pizza Estilo Carnaval de 9″"),"7.95",z("Robust tomato sauce and shredded mozzarella. Ham, pepperoni, bacon or mushrooms + $1.50 · onions, banana or crushed peppers N/C","Salsa de tomate robusta y mozzarella rallada. Jamón, pepperoni, tocino o champiñones + $1.50 · cebolla, chiles banana o triturados sin cargo")]]}]}
+];
+let L='en';try{L=localStorage.getItem('lang')||(/^es/i.test(navigator.language)?'es':'en')}catch(e){}
+const tx=x=>typeof x==='string'?x:x[L==='es'?1:0];
+const LB={Sm:"Peq.",Lg:"Gde.",pc:"pz"};
+const lbl=l=>L==='es'?l.replace(/\b(Sm|Lg|pc)\b/g,m=>LB[m]):l;
+function pr(s){return `<div class="pr">${s.split('|').map(x=>{if(/^(N\/C|\+?\d)/.test(x)&&!/\s/.test(x)){return `<span class="ch"><b>${/^\d/.test(x)?'$'+x:(x[0]==='+'?'+$'+x.slice(1):x)}</b></span>`}const k=x.lastIndexOf(' ');return `<span class="ch">${k>0?`<i>${lbl(x.slice(0,k))}</i>`:''}<b>${/^[+\d]/.test(x.slice(k+1))?(x[k+1]==='+'?'+$'+x.slice(k+2):'$'+x.slice(k+1)):x.slice(k+1)}</b></span>`}).join('')}</div>`}
+function pv(v){if(Array.isArray(v))v=tx(v);return v}
+function draw(){
+ document.documentElement.lang=L;
+ document.title=L==='es'?"Mike’s Sandwich Shop · Menú":"Mike’s Sandwich Shop · Menu";
+ document.querySelectorAll('[data-es]').forEach(e=>{if(!e.dataset.en)e.dataset.en=e.innerHTML;e.innerHTML=L==='es'?e.dataset.es:e.dataset.en});
+ const nav=document.getElementById('nav'),m=document.getElementById('menu');
+ nav.innerHTML=`<div class="lang"><button data-l="en" aria-pressed="${L==='en'}">EN</button><button data-l="es" aria-pressed="${L==='es'}">ES</button></div>`+D.map(s=>`<a href="#${s.id}">${s.ic} ${tx(s.t)}</a>`).join('');
+ m.innerHTML=D.map(s=>`<section id="${s.id}"><h2>${s.ic} ${tx(s.t)}</h2><div class="cols">`+s.g.map(g=>`<div class="cd"><h3><span>${tx(g.n)}</span>${g.p?`<em>${tx(g.p)}</em>`:''}</h3>${g.note?`<p class="nt">${tx(g.note)}</p>`:''}`+g.i.map(i=>`<div class="it"><div><div class="nm">${tx(i[0])}</div>${i[2]?`<div class="ds">${tx(i[2])}</div>`:''}</div>${i[1]?pr(pv(i[1])):''}</div>`).join('')+`</div>`).join('')+`</div></section>`).join('');
+}
+document.getElementById('nav').addEventListener('click',e=>{const b=e.target.closest('button[data-l]');if(b){L=b.dataset.l;try{localStorage.setItem('lang',L)}catch(x){}draw()}});
+draw();
+</script>
+</body>
+</html>
